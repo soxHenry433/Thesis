@@ -1,0 +1,29 @@
+#!/bin/bash
+#A small program to facilate download of ascp
+usage(){
+	echo "ascp SRA_code Download_dir";
+	exit 1; 
+}
+if [ -z "${1}" ];then
+    usage
+fi
+
+#The keys ascp needs
+aspera="/home/Sox/.aspera/connect/bin/ascp"
+openssh="/home/Sox/.aspera/connect/etc/asperaweb_id_dsa.openssh"
+putty="/home/Sox/.aspera/connect/etc/asperaweb_id_dsa.putty"
+
+DIR=$2
+if [ -z "${2}" ];then
+    DIR="."
+fi
+
+TT=$1
+DD=${1:0:6}
+$aspera -i $openssh -k 1 \
+	-T \
+	-l200m \
+	anonftp@ftp.ncbi.nlm.nih.gov:/sra/sra-instant/reads/ByRun/sra/SRR/${DD}/${TT}/${TT}.sra \
+	$DIR
+
+
