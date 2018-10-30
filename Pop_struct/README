@@ -1,0 +1,13 @@
+This folder contains the codes for cluster analysis
+
+LD.sh:
+    This is the script to calculate LD by plink
+
+my_tree.sh:
+    This script construct phylogenetic tree with SNPphylo
+
+PCA.R:
+    This is the code to perform PCA 
+
+sNMF.sh
+    This script infers population structure by sNMF in R
