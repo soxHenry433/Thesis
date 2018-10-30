@@ -1,0 +1,27 @@
+This folder contains the codes for SNP calling
+
+SraRunTable.txt:
+    This table contains the detailed information for SRA to be downloaded 
+
+ascp:
+    This is a small script in downloading SRA file
+
+downloadSRR.sh:
+    This bash script downloads SRA file based on the SraRunTable.txt. 
+
+Make_bam.sh:
+    This script maps the reads to the reference by bowtie2. (From fastq to bam)
+
+SNPcall.sh:
+    This script call the integrated SNP dataset by bcftools. 
+
+call_haplo.sh:
+    This script call the phased SNP set by GATK
+
+filter_VCF.sh:
+    This script filter VCF file
+
+
+
+
+
