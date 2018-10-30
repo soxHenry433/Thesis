@@ -1,0 +1,32 @@
+This folder contains the codes for scan of selection and discovery of candidate genes
+
+Cal_hapflk.sh
+Cal_Pai.sh
+Cal_rehh.R
+
+These three script calculate hapFLK, nucleotide diversity and XP-EHh respectively
+_______________________________________________________________________________
+
+Plot_hapFLK.R
+Plot_pai.R
+Plot_rehh.R
+
+These three R codes process and visualize the results produced above.
+_______________________________________________________________________________
+
+Cluster_SNP.R
+
+This script cluster significant SNP into regions
+_______________________________________________________________________________
+
+Find_cand_gene.sh 
+Plot_cand.R
+Plot_cand_fun.R
+
+These three files search for candidate genes in the candidate regions, 
+and visualize statistics and genotypes within the candidate regions
+First, Find_cand_gene.sh find genes in the candidate regions and fetch the statistics of the candidate genes
+Second, Find_cand_gene.sh call Plot_cand.R to get detailed information for these genes and plot statistics
+Plot_cand_fun.R contains the functions Plot_cand.R needs, Plot_cand.R will load Plot_cand_fun.R in the process.
+
+
