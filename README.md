@@ -1,8 +1,13 @@
 # Thesis
-This is the code for my master thesis "Differenciation between cauliflower and broccoli"
+These are the codes for my master thesis:
+Candidate regions associated with differenciation between cauliflower and broccoli
 
 The codes are just representative instead of reproducible
-For Non-Disclosure Agreement, the datasets are not uploaded.
+For Non-Disclosure Agreement, the datasets were not uploaded.
 
+Thank you for your interset and inspectation
+ 
+Best regards 
 
-
+Yi Lun, Lee 
+2018.11.19
